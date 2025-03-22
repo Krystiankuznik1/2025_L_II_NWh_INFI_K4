@@ -1,14 +1,14 @@
-version: 2.1 
-jobs: 
-  build-and-test:  
-    machine: 
+version: 2.1
+jobs:
+  build-and-test:
+    machine:
       image: ubuntu-2404:2024.11.1
         
-    steps: 
-      - checkout 
-      - run: make deps 
-      - run: make test       
-workflows: 
-  basic:  
-    jobs: 
-      - build-and-test 
+    steps:
+      - checkout
+      - run: make deps
+      - run: make test
+workflows:
+  basic:
+    jobs:
+      - build-and-test
